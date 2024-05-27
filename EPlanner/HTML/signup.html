@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sedan+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left_section">
+            <h1 id="logoText">EPlanner</h1>
+            <img src="./images/mainIndexLogo.svg" alt="Logo">
+        </div>
+        <div class="right_section">
+            <form id="create_user_form">
+                <p id="login_p">Sign Up</p>
+                <input type="text" name="first_name" id="first_name" placeholder="John" pattern="^[a-zA-Z0-9]{1,10}$">
+                <input type="text" name="last_name" id = "last_name" placeholder="Doe" pattern="^[a-zA-Z0-9]{1,10}$">
+                <input type="email" name="email" id="email" placeholder="popet@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <input type="password" id="password" id = "password" name="password" placeholder="Enter password:" pattern=".{8,}" required>
+                <button type="submit" id="register_button" name="submit">Sign Up</button>
+                <p id="dont_have_acc_p">Already have an account? <a href="./index.html">Log In</a></p>
+            </form>
+        </div>
+        <div id="user_data"></div>
+
+    </div>
+    <script src="../JS/create_user.js"></script>
+</body>
+</html>
