@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary_white:#fff;
+    --primary_black: #1c1c1c;
+    --primary_pink:rgba(235, 51, 106, 0.719);
+    --gray:rgba(109, 106, 105, 0.667);
+}
+
+/* main container */
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left_section{
+    padding: 10px;
+    flex: 0 0 60%;
+    height: 100%;
+}
+
+#logoText{
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+}
+
+#events_div{
+    margin-top: 50px;
+}
+
+
+.left_section span{
+    margin-top: 10px;
+    width: 100%;
+    border: 2px solid var(--gray);
+    border-radius: 50px;
+    justify-content: space-around;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.left_section span textarea{
+    outline: none;
+    resize: none;
+}
+
+.right_section{
+    display: flex;
+    background-color: var(--primary_pink);
+    flex: 0 0 40%;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.right_section img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--primary_white);
+}
+
+.inside_div p{
+    margin-top: 10px;
+    font-size: 30px;
+    color: var(--primary_white);
+    font-family: "Dancing Script", cursive;
+}
+
+
+
+
+
+
